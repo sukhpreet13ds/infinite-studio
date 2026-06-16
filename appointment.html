@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Infinite Studio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="assets/favicon.png" type="image/png">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="nav-links nav-left">
+                <a href="index.html" class="nav-item">Home</a>
+                <a href="service.html" class="nav-item">Services</a>
+                <a href="about-us.html" class="nav-item">About Us</a>
+                <a href="gallery.html" class="nav-item">Gallery</a>
+                <a href="contact-us.html" class="nav-item">Contact</a>
+            </div>
+
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img src="assets/infinite-logo.svg" alt="Infinite Studio Logo" class="logo-img">
+                </a>
+            </div>
+
+            <div class="nav-right">
+                <div class="contact-info">
+                    <span class="contact-label">Phone Number</span>
+                    <a href="tel:+917994151903" class="contact-value">+91 79941 51903</a>
+                </div>
+                <div class="vertical-divider"></div>
+                <a href="service.html" class="btn btn-outline btn-book-nav">Book Services</a>
+                <button class="burger-btn desktop-burger-trigger" aria-label="Open information sidebar">
+                    <i class="fa-solid fa-grip-lines"></i>
+                </button>
+            </div>
+
+            <button class="burger-btn mobile-burger-trigger" aria-label="Open menu sidebar">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+    <div class="sidebar-overlay" id="mobile-sidebar-overlay">
+        <div class="sidebar-drawer" id="mobile-sidebar">
+            <div class="sidebar-header">
+                <button class="close-btn" id="close-mobile-sidebar" aria-label="Close menu">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="sidebar-body">
+                <nav class="mobile-nav-links">
+                    <a href="index.html" class="mobile-nav-item">Home</a>
+                    <a href="service.html" class="mobile-nav-item">Services</a>
+                    <a href="about-us.html" class="mobile-nav-item">About Us</a>
+                    <a href="gallery.html" class="mobile-nav-item">Gallery</a>
+                    <a href="contact-us.html" class="mobile-nav-item">Contact</a>
+                </nav>
+                <div class="mobile-sidebar-footer">
+                    <div class="mobile-phone">
+                        <span class="phone-label">Phone Number</span>
+                        <a href="tel:+9179941 51903" class="phone-value">+91 79941 51903</a>
+                    </div>
+                    <a href="service.html" class="btn btn-outline btn-mobile-book">Book Services</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sidebar-overlay" id="desktop-sidebar-overlay">
+        <div class="sidebar-drawer" id="desktop-sidebar">
+            <div class="sidebar-header">
+                <button class="close-btn" id="close-desktop-sidebar" aria-label="Close information">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="sidebar-body">
+                <div class="desktop-sidebar-logo">
+                    <img src="assets/infinite-logo.svg" alt="Infinite Studio Logo" class="sidebar-logo-img">
+                </div>
+                <div class="desktop-sidebar-content">
+                    <h3>Contact Information</h3>
+                    <div class="info-block">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>123 Luxury Lane, Suite 100<br>Beverly Hills, CA 90210</p>
+                        </div>
+                    </div>
+                    <div class="info-block">
+                        <i class="fa-solid fa-phone"></i>
+
+                        <div>
+                            <h4>Phone</h4>
+                            <p>
+                                <a href="tel:+917994151903">+91 79941 51903</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="info-block">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>
+                                <a href="mailto:info@infinitestudio.com">info@infinitestudio.com</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="info-block">
+                        <i class="fa-solid fa-clock"></i>
+                        <div>
+                            <h4>Working Hours</h4>
+                            <p>Mon - Sat: 9:00 AM - 8:00 PM<br>Sun: 10:00 AM - 6:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <span class="hero-subtitle">Appointment</span>
+                <h1 class="hero-title">Expert nail, hair, and spa services to help you look and feel your best.</h1>
+                <a href="checkout.html" class="btn btn-outline btn-hero-book">Book Services</a>
+            </div>
+        </section>
+
+        <section class="appointment-section" id="book-services">
+            <div class="appointment-container">
+                <!-- Left Column: Accordion & Filters -->
+                <div class="appointment-left-col">
+                    <!-- Gender Filters -->
+                    <div class="appointment-gender-filter">
+                        <span class="filter-label">FOR</span>
+                        <button class="filter-btn gender-btn active" data-gender="all">All</button>
+                        <button class="filter-btn gender-btn" data-gender="women">Women</button>
+                        <button class="filter-btn gender-btn" data-gender="men">Men</button>
+                    </div>
+
+                    <!-- Accordion Group -->
+                    <div class="accordion-wrapper">
+                        <!-- BODY Category -->
+                        <div class="accordion-item" data-cat="body">
+                            <button class="accordion-header">
+                                <span class="accordion-title">Body</span>
+                                <i class="fa-solid fa-chevron-down accordion-arrow"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="services-items-wrapper">
+                                    <div class="service-item-row" data-gender="women" data-id="body-1">
+                                        <div class="service-item-info">
+                                            <h4 class="service-item-name">Signature Skin Polisher BodySPA (40min) <span
+                                                    class="gender-tag">[Women]</span></h4>
+                                            <div class="service-meta">
+                                                <span class="meta-duration">40 Min</span>
+                                                <span class="meta-price">40 Min</span>
+                                            </div>
+                                        </div>
+                                        <button class="add-cart-btn" data-name="Signature Skin Polisher BodySPA (40min)"
+                                            data-id="body-1" data-duration="40 Min">+ Add</button>
+                                    </div>
+                                    <div class="service-item-row" data-gender="women" data-id="body-2">
+                                        <div class="service-item-info">
+                                            <h4 class="service-item-name">Signature Skin Polisher BodySPA (60min) <span
+                                                    class="gender-tag">[Women]</span></h4>
+                                            <div class="service-meta">
+                                                <span class="meta-duration">60 Min</span>
+                                                <span class="meta-price">60 Min</span>
+                                            </div>
+                                        </div>
+                                        <button class="add-cart-btn" data-name="Signature Skin Polisher BodySPA (60min)"
+                                            data-id="body-2" data-duration="60 Min">+ Add</button>
+                                    </div>
+                                    <div class="service-item-row" data-gender="women" data-id="body-3">
+                                        <div class="service-item-info">
+                                            <h4 class="service-item-name">Signature Skin Polisher BodySPA (90min) <span
+                                                    class="gender-tag">[Women]</span></h4>
+                                            <div class="service-meta">
+                                                <span class="meta-duration">90 Min</span>
+                                                <span class="meta-price">90 Min</span>
+                                            </div>
+                                        </div>
+                                        <button class="add-cart-btn" data-name="Signature Skin Polisher BodySPA (90min)"
+                                            data-id="body-3" data-duration="90 Min">+ Add</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- HAIR Category -->
+                        <div class="accordion-item" data-cat="hair">
+                            <button class="accordion-header">
+                                <span class="accordion-title">Hair</span>
+                                <i class="fa-solid fa-chevron-down accordion-arrow"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="services-items-wrapper">
+                                    <div class="service-item-row" data-gender="men" data-id="hair-1">
+                                        <div class="service-item-info">
+                                            <h4 class="service-item-name">Aroma/Almond oil massage <span
+                                                    class="gender-tag">[Men]</span></h4>
+                                            <div class="service-meta">
+                                                <span class="meta-duration">15 Min</span>
+                                                <span class="meta-price">15 Min</span>
+                                            </div>
+                                        </div>
+                                        <button class="add-cart-btn" data-name="Aroma/Almond oil massage"
+                                            data-id="hair-1" data-duration="15 Min">+ Add</button>
+                                    </div>
+                                    <div class="service-item-row" data-gender="men" data-id="hair-2">
+                                        <div class="service-item-info">
+                                            <h4 class="service-item-name">Basic Hair Spa NM <span
+                                                    class="gender-tag">[Men]</span></h4>
+                                            <div class="service-meta">
+                                                <span class="meta-duration">30 Min</span>
+                                                <span class="meta-price">30 Min</span>
+                                            </div>
+                                        </div>
+                                        <button class="add-cart-btn" data-name="Basic Hair Spa NM" data-id="hair-2"
+                                            data-duration="30 Min">+ Add</button>
+                                    </div>
+                                    <div class="service-item-row" data-gender="men" data-id="hair-3">
+                                        <div class="service-item-info">
+                                            <h4 class="service-item-name">Beard Coloring Ammonia Free <span
+                                                    class="gender-tag">[Men]</span></h4>
+                                            <div class="service-meta">
+                                                <span class="meta-duration">30 Min</span>
+                                                <span class="meta-price">30 Min</span>
+                                            </div>
+                                        </div>
+                                        <button class="add-cart-btn" data-name="Beard Coloring Ammonia Free"
+                                            data-id="hair-3" data-duration="30 Min">+ Add</button>
+                                    </div>
+                                    <div class="service-item-row" data-gender="men" data-id="hair-4">
+                                        <div class="service-item-info">
+                                            <h4 class="service-item-name">Beard Coloring With Ammonia <span
+                                                    class="gender-tag">[Men]</span></h4>
+                                            <div class="service-meta">
+                                                <span class="meta-duration">30 Min</span>
+                                                <span class="meta-price">30 Min</span>
+                                            </div>
+                                        </div>
+                                        <button class="add-cart-btn" data-name="Beard Coloring With Ammonia"
+                                            data-id="hair-4" data-duration="30 Min">+ Add</button>
+                                    </div>
+                                    <div class="service-item-row" data-gender="men" data-id="hair-5">
+                                        <div class="service-item-info">
+                                            <h4 class="service-item-name">Beard Styling <span
+                                                    class="gender-tag">[Men]</span></h4>
+                                            <div class="service-meta">
+                                                <span class="meta-duration">30 Min</span>
+                                                <span class="meta-price">30 Min</span>
+                                            </div>
+                                        </div>
+                                        <button class="add-cart-btn" data-name="Beard Styling" data-id="hair-5"
+                                            data-duration="30 Min">+ Add</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- HAIR CARE Category -->
+                        <div class="accordion-item" data-cat="hair-care">
+                            <button class="accordion-header">
+                                <span class="accordion-title">Hair Care</span>
+                                <i class="fa-solid fa-chevron-down accordion-arrow"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="services-items-wrapper">
+                                    <div class="service-item-row" data-gender="all" data-id="haircare-1">
+                                        <div class="service-item-info">
+                                            <h4 class="service-item-name">Deep Conditioning Hair Mask <span
+                                                    class="gender-tag">[All]</span></h4>
+                                            <div class="service-meta">
+                                                <span class="meta-duration">45 Min</span>
+                                                <span class="meta-price">45 Min</span>
+                                            </div>
+                                        </div>
+                                        <button class="add-cart-btn" data-name="Deep Conditioning Hair Mask"
+                                            data-id="haircare-1" data-duration="45 Min">+ Add</button>
+                                    </div>
+                                    <div class="service-item-row" data-gender="all" data-id="haircare-2">
+                                        <div class="service-item-info">
+                                            <h4 class="service-item-name">Keratin Smooth Therapy <span
+                                                    class="gender-tag">[All]</span></h4>
+                                            <div class="service-meta">
+                                                <span class="meta-duration">90 Min</span>
+                                                <span class="meta-price">90 Min</span>
+                                            </div>
+                                        </div>
+                                        <button class="add-cart-btn" data-name="Keratin Smooth Therapy"
+                                            data-id="haircare-2" data-duration="90 Min">+ Add</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- HAIR CUT Category -->
+                        <div class="accordion-item" data-cat="hair-cut">
+                            <button class="accordion-header">
+                                <span class="accordion-title">Hair Cut</span>
+                                <i class="fa-solid fa-chevron-down accordion-arrow"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="services-items-wrapper">
+                                    <div class="service-item-row" data-gender="women" data-id="haircut-1">
+                                        <div class="service-item-info">
+                                            <h4 class="service-item-name">Signature Haircut & Styling <span
+                                                    class="gender-tag">[Women]</span></h4>
+                                            <div class="service-meta">
+                                                <span class="meta-duration">60 Min</span>
+                                                <span class="meta-price">60 Min</span>
+                                            </div>
+                                        </div>
+                                        <button class="add-cart-btn" data-name="Signature Haircut & Styling"
+                                            data-id="haircut-1" data-duration="60 Min">+ Add</button>
+                                    </div>
+                                    <div class="service-item-row" data-gender="men" data-id="haircut-2">
+                                        <div class="service-item-info">
+                                            <h4 class="service-item-name">Classic Fade & Trim <span
+                                                    class="gender-tag">[Men]</span></h4>
+                                            <div class="service-meta">
+                                                <span class="meta-duration">30 Min</span>
+                                                <span class="meta-price">30 Min</span>
+                                            </div>
+                                        </div>
+                                        <button class="add-cart-btn" data-name="Classic Fade & Trim" data-id="haircut-2"
+                                            data-duration="30 Min">+ Add</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- HAIR STYLING Category -->
+                        <div class="accordion-item" data-cat="hair-styling">
+                            <button class="accordion-header">
+                                <span class="accordion-title">Hair Styling</span>
+                                <i class="fa-solid fa-chevron-down accordion-arrow"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="services-items-wrapper">
+                                    <div class="service-item-row" data-gender="women" data-id="hairstyling-1">
+                                        <div class="service-item-info">
+                                            <h4 class="service-item-name">Blow Dry & Volumizer <span
+                                                    class="gender-tag">[Women]</span></h4>
+                                            <div class="service-meta">
+                                                <span class="meta-duration">30 Min</span>
+                                                <span class="meta-price">30 Min</span>
+                                            </div>
+                                        </div>
+                                        <button class="add-cart-btn" data-name="Blow Dry & Volumizer"
+                                            data-id="hairstyling-1" data-duration="30 Min">+ Add</button>
+                                    </div>
+                                    <div class="service-item-row" data-gender="women" data-id="hairstyling-2">
+                                        <div class="service-item-info">
+                                            <h4 class="service-item-name">Special Occasion Updo <span
+                                                    class="gender-tag">[Women]</span></h4>
+                                            <div class="service-meta">
+                                                <span class="meta-duration">60 Min</span>
+                                                <span class="meta-price">60 Min</span>
+                                            </div>
+                                        </div>
+                                        <button class="add-cart-btn" data-name="Special Occasion Updo"
+                                            data-id="hairstyling-2" data-duration="60 Min">+ Add</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- HAND & FEET Category -->
+                        <div class="accordion-item" data-cat="hand-feet">
+                            <button class="accordion-header">
+                                <span class="accordion-title">Hand & Feet</span>
+                                <i class="fa-solid fa-chevron-down accordion-arrow"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="services-items-wrapper">
+                                    <div class="service-item-row" data-gender="all" data-id="handfeet-1">
+                                        <div class="service-item-info">
+                                            <h4 class="service-item-name">Deluxe Pedicure & Foot Massage <span
+                                                    class="gender-tag">[All]</span></h4>
+                                            <div class="service-meta">
+                                                <span class="meta-duration">50 Min</span>
+                                                <span class="meta-price">50 Min</span>
+                                            </div>
+                                        </div>
+                                        <button class="add-cart-btn" data-name="Deluxe Pedicure & Foot Massage"
+                                            data-id="handfeet-1" data-duration="50 Min">+ Add</button>
+                                    </div>
+                                    <div class="service-item-row" data-gender="all" data-id="handfeet-2">
+                                        <div class="service-item-info">
+                                            <h4 class="service-item-name">Gel Manicure & Nail Art <span
+                                                    class="gender-tag">[All]</span></h4>
+                                            <div class="service-meta">
+                                                <span class="meta-duration">60 Min</span>
+                                                <span class="meta-price">60 Min</span>
+                                            </div>
+                                        </div>
+                                        <button class="add-cart-btn" data-name="Gel Manicure & Nail Art"
+                                            data-id="handfeet-2" data-duration="60 Min">+ Add</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- HEAD OIL MASSAGE Category -->
+                        <div class="accordion-item" data-cat="head-oil-massage">
+                            <button class="accordion-header">
+                                <span class="accordion-title">Head Oil Massage</span>
+                                <i class="fa-solid fa-chevron-down accordion-arrow"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="services-items-wrapper">
+                                    <div class="service-item-row" data-gender="all" data-id="headoil-1">
+                                        <div class="service-item-info">
+                                            <h4 class="service-item-name">Warm Ayurvedic Head Massage <span
+                                                    class="gender-tag">[All]</span></h4>
+                                            <div class="service-meta">
+                                                <span class="meta-duration">30 Min</span>
+                                                <span class="meta-price">30 Min</span>
+                                            </div>
+                                        </div>
+                                        <button class="add-cart-btn" data-name="Warm Ayurvedic Head Massage"
+                                            data-id="headoil-1" data-duration="30 Min">+ Add</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- MASSAGE Category -->
+                        <div class="accordion-item" data-cat="massage">
+                            <button class="accordion-header">
+                                <span class="accordion-title">Massage</span>
+                                <i class="fa-solid fa-chevron-down accordion-arrow"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="services-items-wrapper">
+                                    <div class="service-item-row" data-gender="all" data-id="massage-1">
+                                        <div class="service-item-info">
+                                            <h4 class="service-item-name">Swedish Full Body Massage <span
+                                                    class="gender-tag">[All]</span></h4>
+                                            <div class="service-meta">
+                                                <span class="meta-duration">60 Min</span>
+                                                <span class="meta-price">60 Min</span>
+                                            </div>
+                                        </div>
+                                        <button class="add-cart-btn" data-name="Swedish Full Body Massage"
+                                            data-id="massage-1" data-duration="60 Min">+ Add</button>
+                                    </div>
+                                    <div class="service-item-row" data-gender="all" data-id="massage-2">
+                                        <div class="service-item-info">
+                                            <h4 class="service-item-name">Deep Tissue Therapy <span
+                                                    class="gender-tag">[All]</span></h4>
+                                            <div class="service-meta">
+                                                <span class="meta-duration">70 Min</span>
+                                                <span class="meta-price">70 Min</span>
+                                            </div>
+                                        </div>
+                                        <button class="add-cart-btn" data-name="Deep Tissue Therapy" data-id="massage-2"
+                                            data-duration="70 Min">+ Add</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- SCALP TREATMENT Category -->
+                        <div class="accordion-item" data-cat="scalp-treatment">
+                            <button class="accordion-header">
+                                <span class="accordion-title">Scalp Treatment</span>
+                                <i class="fa-solid fa-chevron-down accordion-arrow"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="services-items-wrapper">
+                                    <div class="service-item-row" data-gender="all" data-id="scalp-1">
+                                        <div class="service-item-info">
+                                            <h4 class="service-item-name">Anti-Dandruff Scalp Detox <span
+                                                    class="gender-tag">[All]</span></h4>
+                                            <div class="service-meta">
+                                                <span class="meta-duration">45 Min</span>
+                                                <span class="meta-price">45 Min</span>
+                                            </div>
+                                        </div>
+                                        <button class="add-cart-btn" data-name="Anti-Dandruff Scalp Detox"
+                                            data-id="scalp-1" data-duration="45 Min">+ Add</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- SKIN Category -->
+                        <div class="accordion-item" data-cat="skin">
+                            <button class="accordion-header">
+                                <span class="accordion-title">Skin</span>
+                                <i class="fa-solid fa-chevron-down accordion-arrow"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="services-items-wrapper">
+                                    <div class="service-item-row" data-gender="women" data-id="skin-1">
+                                        <div class="service-item-info">
+                                            <h4 class="service-item-name">Radiance Facial Glow <span
+                                                    class="gender-tag">[Women]</span></h4>
+                                            <div class="service-meta">
+                                                <span class="meta-duration">60 Min</span>
+                                                <span class="meta-price">60 Min</span>
+                                            </div>
+                                        </div>
+                                        <button class="add-cart-btn" data-name="Radiance Facial Glow" data-id="skin-1"
+                                            data-duration="60 Min">+ Add</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- SKIN CARE Category -->
+                        <div class="accordion-item" data-cat="skin-care">
+                            <button class="accordion-header">
+                                <span class="accordion-title">Skin Care</span>
+                                <i class="fa-solid fa-chevron-down accordion-arrow"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="services-items-wrapper">
+                                    <div class="service-item-row" data-gender="men" data-id="skincare-1">
+                                        <div class="service-item-info">
+                                            <h4 class="service-item-name">Charcoal Deep Cleansing Facial <span
+                                                    class="gender-tag">[Men]</span></h4>
+                                            <div class="service-meta">
+                                                <span class="meta-duration">45 Min</span>
+                                                <span class="meta-price">45 Min</span>
+                                            </div>
+                                        </div>
+                                        <button class="add-cart-btn" data-name="Charcoal Deep Cleansing Facial"
+                                            data-id="skincare-1" data-duration="45 Min">+ Add</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- THREADING Category -->
+                        <div class="accordion-item" data-cat="threading">
+                            <button class="accordion-header">
+                                <span class="accordion-title">Threading</span>
+                                <i class="fa-solid fa-chevron-down accordion-arrow"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="services-items-wrapper">
+                                    <div class="service-item-row" data-gender="women" data-id="threading-1">
+                                        <div class="service-item-info">
+                                            <h4 class="service-item-name">Eyebrow Shaping & Threading <span
+                                                    class="gender-tag">[Women]</span></h4>
+                                            <div class="service-meta">
+                                                <span class="meta-duration">15 Min</span>
+                                                <span class="meta-price">15 Min</span>
+                                            </div>
+                                        </div>
+                                        <button class="add-cart-btn" data-name="Eyebrow Shaping & Threading"
+                                            data-id="threading-1" data-duration="15 Min">+ Add</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Cart Widget -->
+                <div class="appointment-right-col">
+                    <div class="cart-widget">
+                        <div class="cart-header">
+                            <h3 class="cart-widget-title">Your Cart</h3>
+                            <span class="cart-count-badge">0</span>
+                        </div>
+                        <div class="cart-body">
+                            <!-- Empty State -->
+                            <div class="cart-empty-state">
+                                <i class="fa-solid fa-scissors empty-cart-icon"></i>
+                                <p class="empty-state-title">No services selected yet.</p>
+                                <p class="empty-state-subtitle">Tap ADD on any service to begin.</p>
+                            </div>
+                            <!-- Selected Services List (hidden initially) -->
+                            <div class="cart-selected-list" style="display: none;"></div>
+                        </div>
+                        <div class="cart-footer">
+                            <a href="checkout.html"><button class="proceed-book-btn">Proceed to Booking</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+    <footer class="infinite-footer">
+        <div class="footer-container">
+            <div class="footer-columns">
+                <!-- Column 1: Website Map & Newsletter -->
+                <div class="footer-col footer-col-left">
+                    <div class="footer-map-group">
+                        <h3 class="footer-title">WEBSITE MAP</h3>
+                        <div class="footer-map-links">
+                            <div class="map-col">
+                                <a href="index.html">Home</a>
+                                <a href="about-us.html">About Us</a>
+                                <a href="service.html">Services</a>
+
+                            </div>
+                            <div class="map-col">
+                                <a href="gallery.html">Gallery</a>
+                                <a href="contact-us.html">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-newsletter-group">
+                        <h3 class="footer-title news-title">NEWSLETTER</h3>
+                        <form class="newsletter-form">
+                            <div class="input-wrapper">
+                                <input type="email" placeholder="Your email address" required>
+                                <button type="submit" aria-label="Subscribe">
+                                    <i class="fa-solid fa-paper-plane"></i>
+                                </button>
+                            </div>
+                            <label class="checkbox-label">
+                                <input type="checkbox" required>
+                                <span>I agree to the <a href="privacy-policy.html">Privacy Policy</a></span>
+                            </label>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Column 2: Logo & Brand text -->
+                <div class="footer-col footer-col-center">
+                    <p class="brand-tagline">Drop us a line sed id semper risus in hend rerit.</p>
+                    <div class="footer-logo">
+                        <img src="assets/footer-logo.svg" alt="Infinite Studio Logo">
+                    </div>
+                </div>
+
+                <!-- Column 3: Contact Info & Follow -->
+                <div class="footer-col footer-col-right">
+                    <div class="footer-contact-group">
+                        <h3 class="footer-title">CONTACT</h3>
+                        <p class="contact-address">
+                            1st Floor, 829/ E1 - Salura Building, Panampilly Nagar Walkway Road, Cheriyakadavanthra,
+                            Kadavanthra Part 1, Ernakulam, Kerala - 682015
+                        </p>
+                        <p class="contact-phone">
+                            P: <a href="tel:+917994151903">+91 79941 51903</a>
+                        </p>
+
+                        <p class="contact-email">
+                            E: <a href="mailto:info@infinitestudio.com">info@infinitestudio.com</a>
+                        </p>
+                    </div>
+                    <div class="footer-follow-group">
+                        <h3 class="footer-title">FOLLOW</h3>
+                        <div class="social-icons">
+                            <!-- <a href="#follow" class="social-icon" aria-label="X"><i
+                                    class="fa-brands fa-x-twitter"></i></a> -->
+                            <a href="https://www.facebook.com/share/18ysUXWurN/?mibextid=wwXIfr" class="social-icon"
+                                aria-label="Facebook"><i class="fa-brands fa-facebook-f" target="_blank"></i></a>
+                            <a href="https://www.instagram.com/infinitestudiopanampilly?igsh=MTQyZGh6d2hvd25taQ=="
+                                class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"
+                                    target="_blank"></i></a>
+                            <!-- <a href="#follow" class="social-icon" aria-label="LinkedIn"><i
+                                    class="fa-brands fa-linkedin-in"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Copyright & Legal Links -->
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2026 Infinite Studio. All Rights Reserved.</p>
+                <div class="legal-links">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <span class="legal-separator">|</span>
+                    <a href="terms-conditions.html">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Select elements
+            const accordionHeaders = document.querySelectorAll('.accordion-header');
+            const genderButtons = document.querySelectorAll('.gender-btn');
+            const serviceRows = document.querySelectorAll('.service-item-row');
+            const accordionItems = document.querySelectorAll('.accordion-item');
+
+            const cartCountBadge = document.querySelector('.cart-count-badge');
+            const cartEmptyState = document.querySelector('.cart-empty-state');
+            const cartSelectedList = document.querySelector('.cart-selected-list');
+            const proceedBookBtn = document.querySelector('.proceed-book-btn');
+
+            let selectedServices = []; // Array of objects: { id, name, duration }
+            let currentGender = 'all';
+
+            // Accordion Toggle
+            accordionHeaders.forEach(header => {
+                header.addEventListener('click', () => {
+                    const parentItem = header.parentElement;
+
+                    // Close others if we want (or keep them independent, let's keep them independent for convenience, or toggle accordion)
+                    // Let's do toggle accordion:
+                    parentItem.classList.toggle('active');
+                });
+            });
+
+            // Gender Filtering
+            function applyFilters() {
+                accordionItems.forEach(item => {
+                    const rows = item.querySelectorAll('.service-item-row');
+                    let visibleRowsCount = 0;
+
+                    rows.forEach(row => {
+                        const rowGender = row.getAttribute('data-gender');
+                        const matchesGender = (currentGender === 'all' || rowGender === 'all' || rowGender === currentGender);
+
+                        if (matchesGender) {
+                            row.style.display = 'flex';
+                            visibleRowsCount++;
+                        } else {
+                            row.style.display = 'none';
+                        }
+                    });
+
+                    // If no visible rows, hide the whole accordion category
+                    if (visibleRowsCount > 0) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            }
+
+            // Gender buttons
+            genderButtons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    genderButtons.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    currentGender = btn.getAttribute('data-gender');
+                    applyFilters();
+                });
+            });
+
+            // Update Cart UI
+            function updateCartUI() {
+                const count = selectedServices.length;
+                cartCountBadge.textContent = count;
+
+                if (count === 0) {
+                    cartEmptyState.style.display = 'flex';
+                    cartSelectedList.style.display = 'none';
+                    proceedBookBtn.disabled = true;
+                } else {
+                    cartEmptyState.style.display = 'none';
+                    cartSelectedList.style.display = 'block';
+                    proceedBookBtn.disabled = false;
+
+                    // Render list
+                    cartSelectedList.innerHTML = '';
+                    selectedServices.forEach(service => {
+                        const cartRow = document.createElement('div');
+                        cartRow.className = 'cart-item-row';
+                        cartRow.innerHTML = `
+                            <div class="cart-item-info">
+                                <span class="cart-item-name">${service.name}</span>
+                                <span class="cart-item-duration">${service.duration}</span>
+                            </div>
+                            <button class="cart-item-remove-btn" data-id="${service.id}">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        `;
+                        cartSelectedList.appendChild(cartRow);
+                    });
+
+                    // Add click listeners to remove buttons in the cart widget
+                    document.querySelectorAll('.cart-item-remove-btn').forEach(btn => {
+                        btn.addEventListener('click', () => {
+                            const idToRemove = btn.getAttribute('data-id');
+                            removeService(idToRemove);
+                        });
+                    });
+                }
+            }
+
+            // Add service
+            function addService(id, name, duration, buttonEl) {
+                selectedServices.push({ id, name, duration });
+                buttonEl.textContent = 'Added';
+                buttonEl.classList.add('added');
+                updateCartUI();
+            }
+
+            // Remove service
+            function removeService(id) {
+                selectedServices = selectedServices.filter(s => s.id !== id);
+
+                // Reset button state in services list
+                const buttonEl = document.querySelector(`.add-cart-btn[data-id="${id}"]`);
+                if (buttonEl) {
+                    buttonEl.textContent = '+ Add';
+                    buttonEl.classList.remove('added');
+                }
+
+                updateCartUI();
+            }
+
+            // Listen to ADD buttons in the service list
+            document.querySelectorAll('.add-cart-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const id = btn.getAttribute('data-id');
+                    const name = btn.getAttribute('data-name');
+                    const duration = btn.getAttribute('data-duration');
+
+                    const exists = selectedServices.some(s => s.id === id);
+                    if (exists) {
+                        removeService(id);
+                    } else {
+                        addService(id, name, duration, btn);
+                    }
+                });
+            });
+
+            // Expand first accordion by default
+            if (accordionItems[0]) {
+                accordionItems[0].classList.add('active');
+            }
+        });
+    </script>
+    <script src="script/script.js"></script>
+</body>
+
+</html>

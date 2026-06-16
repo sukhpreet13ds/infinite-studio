@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Infinite Studio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="assets/favicon.png" type="image/png">
     <link rel="stylesheet" href="style/style.css">
 </head>
+
 <body>
 
     <header class="main-header">
         <nav class="navbar">
             <div class="nav-links nav-left">
-                <a href="#services" class="nav-item">Services</a>
-                <a href="#about" class="nav-item">About Us</a>
-                <a href="#gallery" class="nav-item">Gallery</a>
-                <a href="#contact" class="nav-item">Contact</a>
+                <a href="index.html" class="nav-item">Home</a>
+                <a href="service.html" class="nav-item">Services</a>
+                <a href="about-us.html" class="nav-item">About Us</a>
+                <a href="gallery.html" class="nav-item">Gallery</a>
+                <a href="contact-us.html" class="nav-item">Contact</a>
             </div>
 
             <div class="nav-logo">
-                <a href="#">
+                <a href="index.html">
                     <img src="assets/infinite-logo.svg" alt="Infinite Studio Logo" class="logo-img">
                 </a>
             </div>
@@ -27,10 +33,10 @@
             <div class="nav-right">
                 <div class="contact-info">
                     <span class="contact-label">Phone Number</span>
-                    <span class="contact-value">+111 222 333</span>
+                    <a href="tel:+917994151903" class="contact-value">+91 79941 51903</a>
                 </div>
                 <div class="vertical-divider"></div>
-                <a href="#book" class="btn btn-outline btn-book-nav">Book Services</a>
+                <a href="service.html" class="btn btn-outline btn-book-nav">Book Services</a>
                 <button class="burger-btn desktop-burger-trigger" aria-label="Open information sidebar">
                     <i class="fa-solid fa-grip-lines"></i>
                 </button>
@@ -41,32 +47,6 @@
             </button>
         </nav>
     </header>
-
-    <section class="hero-section">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <span class="hero-subtitle">for the best nails</span>
-            <h1 class="hero-title">POLISHÉ NAILS IS FOR EVERYONE WHO LOVES BEAUTIFUL HANDS.</h1>
-            <a href="#book" class="btn btn-outline btn-hero-book">Book Services</a>
-        </div>
-    </section>
-
-    <!-- Story Section -->
-    <section class="story-section" id="about">
-        <div class="story-container">
-            <div class="story-card">
-                <span class="story-subtitle">story</span>
-                <h2 class="story-title">CRAFTED WITH CARE</h2>
-                <p class="story-text">
-                    Every manicure is designed with precision, passion, and a touch of artistry. 
-                    From classic elegance to modern trends, we bring your nail vision to life with 
-                    expert techniques and premium products.
-                </p>
-                <a href="#about-more" class="btn btn-outline btn-story-more">Read More</a>
-            </div>
-        </div>
-    </section>
-
     <div class="sidebar-overlay" id="mobile-sidebar-overlay">
         <div class="sidebar-drawer" id="mobile-sidebar">
             <div class="sidebar-header">
@@ -76,17 +56,18 @@
             </div>
             <div class="sidebar-body">
                 <nav class="mobile-nav-links">
-                    <a href="#services" class="mobile-nav-item">Services</a>
-                    <a href="#about" class="mobile-nav-item">About Us</a>
-                    <a href="#gallery" class="mobile-nav-item">Gallery</a>
-                    <a href="#contact" class="mobile-nav-item">Contact</a>
+                    <a href="index.html" class="mobile-nav-item">Home</a>
+                    <a href="service.html" class="mobile-nav-item">Services</a>
+                    <a href="about-us.html" class="mobile-nav-item">About Us</a>
+                    <a href="gallery.html" class="mobile-nav-item">Gallery</a>
+                    <a href="contact-us.html" class="mobile-nav-item">Contact</a>
                 </nav>
                 <div class="mobile-sidebar-footer">
                     <div class="mobile-phone">
                         <span class="phone-label">Phone Number</span>
-                        <a href="tel:+111222333" class="phone-value">+111 222 333</a>
+                        <a href="tel:+9179941 51903" class="phone-value">+91 79941 51903</a>
                     </div>
-                    <a href="#book" class="btn btn-outline btn-mobile-book">Book Services</a>
+                    <a href="service.html" class="btn btn-outline btn-mobile-book">Book Services</a>
                 </div>
             </div>
         </div>
@@ -114,16 +95,21 @@
                     </div>
                     <div class="info-block">
                         <i class="fa-solid fa-phone"></i>
+
                         <div>
                             <h4>Phone</h4>
-                            <p>+111 222 333</p>
+                            <p>
+                                <a href="tel:+917994151903">+91 79941 51903</a>
+                            </p>
                         </div>
                     </div>
                     <div class="info-block">
                         <i class="fa-solid fa-envelope"></i>
                         <div>
                             <h4>Email</h4>
-                            <p>info@infinitestudio.com</p>
+                            <p>
+                                <a href="mailto:info@infinitestudio.com">info@infinitestudio.com</a>
+                            </p>
                         </div>
                     </div>
                     <div class="info-block">
@@ -138,6 +124,373 @@
         </div>
     </div>
 
+    <main>
+
+        <section class="hero-section">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <span class="hero-subtitle">for the best nails</span>
+                <h1 class="hero-title">POLISHÉ NAILS IS FOR EVERYONE WHO LOVES BEAUTIFUL HANDS.</h1>
+                <a href="service.html" class="btn btn-outline btn-hero-book">Book Services</a>
+            </div>
+        </section>
+
+        <!-- Story Section -->
+        <section class="story-section" id="about">
+            <div class="story-container">
+                <div class="story-card">
+                    <span class="story-subtitle">story</span>
+                    <h2 class="story-title">CRAFTED WITH CARE</h2>
+                    <p class="story-text">
+                        Every manicure is designed with precision, passion, and a touch of artistry.
+                        From classic elegance to modern trends, we bring your nail vision to life with
+                        expert techniques and premium products.
+                    </p>
+                    <a href="about-us.html" class="btn btn-outline btn-story-more">Read More</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="experience-section" id="experience">
+            <div class="experience-container">
+                <div class="experience-card">
+                    <span class="experience-subtitle">head spa</span>
+                    <h2 class="experience-title">EXPERIENCE</h2>
+                    <p class="experience-text">
+                        Every manicure is designed with precision, passion, and a touch of artistry. From classic
+                        elegance
+                        to modern trends, we bring your nail vision to life with expert techniques and premium products.
+                    </p>
+                    <a href="service.html" class="btn btn-outline btn-story-more">Book Service</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="services-section" id="services">
+            <div class="services-container">
+                <div class="services-card">
+                    <span class="services-subtitle">services</span>
+                    <h2 class="services-title">STAY IN VOGUE WITH TRENDIEST NAIL ARTS</h2>
+
+                    <div class="services-slider-wrapper">
+                        <div class="services-slider-track">
+                            <!-- Service 1 -->
+                            <div class="service-slide shape-arch">
+                                <div class="service-image-container">
+                                    <img src="assets/service-1.jpg" alt="Nail Services" class="service-img">
+                                </div>
+                                <h3 class="service-name">NAIL SERVICES</h3>
+                            </div>
+                            <!-- Service 2 -->
+                            <div class="service-slide shape-oval">
+                                <div class="service-image-container">
+                                    <img src="assets/service-2.jpg" alt="Hair Services" class="service-img">
+                                </div>
+                                <h3 class="service-name">HAIR SERVICES</h3>
+                            </div>
+                            <!-- Service 3 -->
+                            <div class="service-slide shape-arch">
+                                <div class="service-image-container">
+                                    <img src="assets/service-3.jpg" alt="Spa Services" class="service-img">
+                                </div>
+                                <h3 class="service-name">SPA SERVICES</h3>
+                            </div>
+                            <!-- Service 4 -->
+                            <div class="service-slide shape-arch">
+                                <div class="service-image-container">
+                                    <img src="assets/service-1.jpg" alt="Nail Services" class="service-img">
+                                </div>
+                                <h3 class="service-name">NAIL SERVICES</h3>
+                            </div>
+                            <!-- Service 5 -->
+                            <div class="service-slide shape-oval">
+                                <div class="service-image-container">
+                                    <img src="assets/service-2.jpg" alt="Hair Services" class="service-img">
+                                </div>
+                                <h3 class="service-name">HAIR SERVICES</h3>
+                            </div>
+                            <!-- Service 6 -->
+                            <div class="service-slide shape-arch">
+                                <div class="service-image-container">
+                                    <img src="assets/service-3.jpg" alt="Spa Services" class="service-img">
+                                </div>
+                                <h3 class="service-name">SPA SERVICES</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="services-footer">
+                        <a href="service.html" class="btn btn-outline btn-services-all">View All Services</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery-section" id="gallery">
+            <div class="gallery-marquee-wrapper">
+                <div class="gallery-marquee-track">
+                    <!-- Set of 8 items -->
+                    <div class="gallery-item">
+                        <img src="assets/experience.jpg" alt="Infinite Studio Interior 1">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/second-photo.JPG" alt="Infinite Studio Interior 2">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/services-bg.jpg" alt="Infinite Studio Interior 3">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/hero-section.jpg" alt="Infinite Studio Interior 4">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/experience.jpg" alt="Infinite Studio Interior 5">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/second-photo.JPG" alt="Infinite Studio Interior 6">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/services-bg.jpg" alt="Infinite Studio Interior 7">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/hero-section.jpg" alt="Infinite Studio Interior 8">
+                    </div>
+
+                    <!-- Duplicate Set of 8 items for seamless scrolling -->
+                    <div class="gallery-item">
+                        <img src="assets/experience.jpg" alt="Infinite Studio Interior 1">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/second-photo.JPG" alt="Infinite Studio Interior 2">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/services-bg.jpg" alt="Infinite Studio Interior 3">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/hero-section.jpg" alt="Infinite Studio Interior 4">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/experience.jpg" alt="Infinite Studio Interior 5">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/second-photo.JPG" alt="Infinite Studio Interior 6">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/services-bg.jpg" alt="Infinite Studio Interior 7">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/hero-section.jpg" alt="Infinite Studio Interior 8">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="team-section" id="team">
+            <div class="team-container">
+                <div class="team-card">
+                    <span class="team-subtitle">Our Team</span>
+                    <h2 class="team-title">THE INFINITE TEAM</h2>
+                    <p class="team-text">
+                        At Infinite Studio, we are dedicated to your well-being. Visiting us is about more than just a
+                        treatment; it is a bespoke luxury experience designed around you. Our expert team is committed
+                        to
+                        ensuring you feel completely at ease, providing a seamless and tranquil environment from the
+                        moment
+                        you arrive until your services are complete.
+                    </p>
+                    <a href="our-team.html" class="btn btn-outline btn-story-more">See Our Team</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="view-section">
+            <div class="view-marquee-wrapper">
+                <div class="view-marquee-track">
+                    <!-- 12 Original Items -->
+                    <div class="view-item">
+                        <img src="assets/view-1.png" alt="Infinite Studio View 1">
+                    </div>
+                    <div class="view-item">
+                        <img src="assets/view-2.jpg" alt="Infinite Studio View 2">
+                    </div>
+                    <div class="view-item">
+                        <img src="assets/view-3.jpg" alt="Infinite Studio View 3">
+                    </div>
+                    <div class="view-item">
+                        <img src="assets/inifinite-1.jpg" alt="Infinite Studio View 8">
+                    </div>
+                    <div class="view-item">
+                        <img src="assets/inifinite-2.jpg" alt="Infinite Studio View 8">
+                    </div>
+                    <div class="view-item">
+                        <img src="assets/view-4.jpg" alt="Infinite Studio View 4">
+                    </div>
+                    <div class="view-item">
+                        <img src="assets/services-bg.jpg" alt="Infinite Studio View 5">
+                    </div>
+                    <div class="view-item">
+                        <img src="assets/experience.jpg" alt="Infinite Studio View 6">
+                    </div>
+                    <div class="view-item">
+                        <img src="assets/team-bg.jpg" alt="Infinite Studio View 7">
+                    </div>
+                    <div class="view-item">
+                        <img src="assets/view-5.png" alt="Infinite Studio View 8">
+                    </div>
+
+                    <div class="view-item">
+                        <img src="assets/inifinite-3.jpg" alt="Infinite Studio View 8">
+                    </div>
+
+                    <div class="view-item">
+                        <img src="assets/inifinite-4.jpg" alt="Infinite Studio View 8">
+                    </div>
+
+
+                    <!-- 12 Duplicate Items for seamless scrolling -->
+                    <div class="view-item">
+                        <img src="assets/view-1.png" alt="Infinite Studio View 1">
+                    </div>
+                    <div class="view-item">
+                        <img src="assets/view-2.jpg" alt="Infinite Studio View 2">
+                    </div>
+                    <div class="view-item">
+                        <img src="assets/view-5.png" alt="Infinite Studio View 8">
+                    </div>
+                    <div class="view-item">
+                        <img src="assets/view-3.jpg" alt="Infinite Studio View 3">
+                    </div>
+                    <div class="view-item">
+                        <img src="assets/inifinite-1.jpg" alt="Infinite Studio View 8">
+                    </div>
+                    <div class="view-item">
+                        <img src="assets/inifinite-2.jpg" alt="Infinite Studio View 8">
+                    </div>
+                    <div class="view-item">
+                        <img src="assets/view-4.jpg" alt="Infinite Studio View 4">
+                    </div>
+                    <div class="view-item">
+                        <img src="assets/services-bg.jpg" alt="Infinite Studio View 5">
+                    </div>
+                    <div class="view-item">
+                        <img src="assets/experience.jpg" alt="Infinite Studio View 6">
+                    </div>
+                    <div class="view-item">
+                        <img src="assets/team-bg.jpg" alt="Infinite Studio View 7">
+                    </div>
+
+                    <div class="view-item">
+                        <img src="assets/inifinite-3.jpg" alt="Infinite Studio View 8">
+                    </div>
+
+                    <div class="view-item">
+                        <img src="assets/inifinite-4.jpg" alt="Infinite Studio View 8">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+
+
+
+
+    <footer class="infinite-footer">
+        <div class="footer-container">
+            <div class="footer-columns">
+                <!-- Column 1: Website Map & Newsletter -->
+                <div class="footer-col footer-col-left">
+                    <div class="footer-map-group">
+                        <h3 class="footer-title">WEBSITE MAP</h3>
+                        <div class="footer-map-links">
+                            <div class="map-col">
+                                <a href="index.html">Home</a>
+                                <a href="about-us.html">About Us</a>
+                                <a href="service.html">Services</a>
+
+                            </div>
+                            <div class="map-col">
+                                <a href="gallery.html">Gallery</a>
+                                <a href="contact-us.html">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-newsletter-group">
+                        <h3 class="footer-title news-title">NEWSLETTER</h3>
+                        <form class="newsletter-form">
+                            <div class="input-wrapper">
+                                <input type="email" placeholder="Your email address" required>
+                                <button type="submit" aria-label="Subscribe">
+                                    <i class="fa-solid fa-paper-plane"></i>
+                                </button>
+                            </div>
+                            <label class="checkbox-label">
+                                <input type="checkbox" required>
+                                <span>I agree to the <a href="privacy-policy.html">Privacy Policy</a></span>
+                            </label>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Column 2: Logo & Brand text -->
+                <div class="footer-col footer-col-center">
+                    <p class="brand-tagline">Drop us a line sed id semper risus in hend rerit.</p>
+                    <div class="footer-logo">
+                        <img src="assets/footer-logo.svg" alt="Infinite Studio Logo">
+                    </div>
+                </div>
+
+                <!-- Column 3: Contact Info & Follow -->
+                <div class="footer-col footer-col-right">
+                    <div class="footer-contact-group">
+                        <h3 class="footer-title">CONTACT</h3>
+                        <p class="contact-address">
+                            1st Floor, 829/ E1 - Salura Building, Panampilly Nagar Walkway Road, Cheriyakadavanthra,
+                            Kadavanthra Part 1, Ernakulam, Kerala - 682015
+                        </p>
+                        <p class="contact-phone">
+                            P: <a href="tel:+917994151903">+91 79941 51903</a>
+                        </p>
+
+                        <p class="contact-email">
+                            E: <a href="mailto:info@infinitestudio.com">info@infinitestudio.com</a>
+                        </p>
+                    </div>
+                    <div class="footer-follow-group">
+                        <h3 class="footer-title">FOLLOW</h3>
+                        <div class="social-icons">
+                            <!-- <a href="#follow" class="social-icon" aria-label="X"><i
+                                    class="fa-brands fa-x-twitter"></i></a> -->
+                            <a href="https://www.facebook.com/share/18ysUXWurN/?mibextid=wwXIfr" class="social-icon"
+                                aria-label="Facebook"><i class="fa-brands fa-facebook-f" target="_blank"></i></a>
+                            <a href="https://www.instagram.com/infinitestudiopanampilly?igsh=MTQyZGh6d2hvd25taQ=="
+                                class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"
+                                    target="_blank"></i></a>
+                            <!-- <a href="#follow" class="social-icon" aria-label="LinkedIn"><i
+                                    class="fa-brands fa-linkedin-in"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Copyright & Legal Links -->
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2026 Infinite Studio. All Rights Reserved.</p>
+                <div class="legal-links">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <span class="legal-separator">|</span>
+                    <a href="terms-conditions.html">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
     <script src="script/script.js"></script>
 </body>
+
 </html>
