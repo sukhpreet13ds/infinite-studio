@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Meddon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Belleza&display=swap');
 
 :root {
    --font-inter: 'Inter', sans-serif;
@@ -277,7 +277,7 @@ a{
 }
 
 .hero-subtitle {
-    font-family: "Meddon", cursive;
+    font-family: "Belleza", cursive;
     font-style: italic;
     font-size: 40px;
     color: #bda689;
@@ -539,7 +539,7 @@ a{
 }
 
 .story-subtitle {
-    font-family: "Meddon", cursive;
+    font-family: "Belleza", cursive;
     font-style: italic;
     font-size: 40px;
     color: #CBB9A3;
@@ -615,7 +615,7 @@ a{
 }
 
 .experience-subtitle {
-    font-family: "Meddon", cursive;
+    font-family: "Belleza", cursive;
     font-style: italic;
     font-size: 40px;
     color: #CBB9A3;
@@ -692,7 +692,7 @@ a{
 }
 
 .services-subtitle {
-    font-family: "Meddon", cursive;
+    font-family: "Belleza", cursive;
     font-style: italic;
     font-size: 40px;
     color: #CBB9A3;
@@ -877,7 +877,7 @@ a{
 }
 
 .team-subtitle {
-    font-family: "Meddon", cursive;
+    font-family: "Belleza", cursive;
     font-style: italic;
     font-size: 40px;
     color: #CBB9A3;
